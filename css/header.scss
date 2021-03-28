@@ -1,0 +1,27 @@
+.header_cont{
+	display: flex;
+    align-items: center;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    margin-bottom: 20px;
+	.header_title{
+		h3{
+			margin:10px;
+			font-weight: bold;
+			font-weight: bold;
+		}
+	}
+	.items_count{
+		flex: 1;
+		display: flex;
+		justify-content: center;
+
+		p{
+			background-color: #607d8b;
+            border: 1px solid #3e535d;
+			color: white;
+			padding: 7px;
+			border-radius: 3px;
+		}
+	}
+}

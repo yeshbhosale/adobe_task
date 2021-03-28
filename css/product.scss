@@ -1,0 +1,244 @@
+.section_container{
+	display: flex;
+	.left_container{
+		display: flex;
+		flex-wrap: wrap;
+		.item_details_bx{
+			display: flex;
+			width: calc(33% - 34px);
+			margin: 10px 15px;
+			flex-direction: column;
+			border: 1px solid ;
+            border-radius: 3px;
+			.img_container{
+                position: relative;
+				display: flex;
+				justify-content: center;
+				height: 250px;
+                padding: 20px 0px;
+				img{
+					width: 75%;
+				}
+                .discount_tag{
+                    position: absolute;
+                    background-color: lightblue;
+                    left: 0px;
+                    background-color: #88c788;
+                    color: white;
+                    p{
+                        margin: 0px;
+                        padding: 5px;
+                    }
+                }
+			}
+            .item_price_action{
+                border-top: 1px solid;
+                padding: 5px;
+                // background-color:#d3d3d359;
+                .item_heading{
+                    font-weight: bold;
+                }
+                .item_action{
+                    display: flex;
+                    align-items: center;
+                    .discounted_price{
+                        text-decoration: line-through;
+                        text-decoration-color: #da2121;
+                        text-decoration-thickness: 2px;
+                        color: gray;
+                        padding-right: 10px;
+                    }
+                    .actual_price{
+                        font-weight: bold;
+                        padding-right: 10px;
+                    }
+                    .cart_button{
+                        display: flex;
+                        flex:1;
+                        flex-direction: row-reverse;
+                        button{
+                            background-color: #607d8b;
+                            border: 1px solid #3e535d;
+                            color: white;
+                            padding: 4px 5px;
+                            border-radius: 3px;
+                            width: 105px;
+                        }
+                        button:focus{
+                            outline: none;
+                        }
+                        button:hover{
+                            cursor: pointer;
+                            background-color:#2b4b56;
+                        }
+                    }
+                }
+                
+            }
+		}
+	}
+    .right_container{
+        min-width: 420px;
+	    padding-right: 10px;
+        position: relative;
+        font-weight: bold;
+        margin-top: 10px;
+        .close_inmobile{
+            display: none;
+            position: absolute;
+            right: 10px;
+            top: 5px;
+            cursor: pointer;
+        }
+        .item_cart_details{
+            .item_cart_heading{
+                border-top: 1px solid #000;
+                border-bottom: 1px solid #000;
+                display: flex;
+                padding: 15px 0px;
+                .item_name_heading{
+                    min-width: 120px;
+                }
+                .count_heading{
+                    display: flex;
+                    justify-content: center;
+                    flex: 1;
+                    width: 100px;
+                    margin-left: 60px;
+                }
+                .item_price_heaing{
+                    min-width: 50px;
+                }
+            }
+                .item_cart_body{
+                    border-bottom: 1px solid #000;
+                    padding: 15px 0px;
+                    .item_each_row{
+                        display: flex;
+                        padding: 10px 0px;
+                        justify-content: center;
+                        align-items: center;
+                        .expirement{
+                            .img_container{
+                                display: inline-block;
+                                vertical-align: middle;
+                                #cart_item_img{
+                                    width: 33px;
+                                }
+                            }
+                            .item_name{
+                                display: inline-block;
+                                vertical-align: middle;
+                                width: 145px;
+                                margin-left: 14px;
+                                font-weight: bold;
+                            }
+                            .item_delete{
+                                display: inline-block;
+                                vertical-align: middle;
+                                max-width: 100px;
+                                margin-left: 9px;
+                                color: #c14141;
+                                cursor: pointer;
+                                
+                            }
+                        }
+                        
+                        .price_calculate{
+                            display: flex;
+                            flex: 1;
+                            justify-content: center;
+
+                            .decrease,.increase{
+                                background-color: #607d8b;
+                                border: 1px solid #3e535d;
+                                color: white;
+                                cursor: pointer;
+                                height: 30px;
+                                border-radius: 2px;
+                            }
+                            .decrease:hover,.increase:hover{
+                                cursor: pointer;
+                                background-color: #2b4b56;
+                            }
+                            .decrease:focus,.increase:focus{
+                                outline: none;
+                            }
+                            p{
+                                width: 20px;
+                                height: 20px;
+                                margin: 5px;
+                                padding: 1px;
+                                text-align: center;
+                            }
+                            input{
+                                max-width: 25px;
+                                height: 25px;
+                                text-align: center;
+                            }
+                            button{
+                                border: 0px;
+                                background-color: transparent;
+                                cursor: pointer;
+                            }
+                        }
+                        .total_item_price{
+                            min-width: 50px;
+                        }
+                    }
+                }
+            
+
+        }
+        .item_cart_price_details{
+            border: 1px solid;
+            margin-top: 20px;
+            
+            .item_cart_price_details_body{
+                padding: 6px 20px;
+                h4{
+                    margin: 10px 0px;
+                    text-align: center;
+                }
+            }
+            .item_cart_price_each_row{
+                display: flex;
+                .start_span{
+                    flex: 1;
+                }
+                .last_span{
+                    flex: 1;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+                
+            }
+            .item_cart_price_total{
+                padding: 5px 0px 10px 0px;
+            }
+            .item_discount_total{
+                .item_cart_price_each_row{
+                    padding: 2px 0px;
+                }
+            }
+            .item_order_total{
+                padding: 12px 20px;
+                background-color: #ddd;
+                margin-top: 5PX;
+            }
+
+        }
+    }
+}
+.right_container_for_mobile{
+    position: fixed;
+    display: none;
+    background-color: #ddd;
+    border: 1px solid #ddd;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 10px;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+}

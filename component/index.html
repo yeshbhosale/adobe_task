@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adobe</title>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" >
+    <link rel="stylesheet" type="text/css" href="./../css/style.css">
+    <script src="https://kit.fontawesome.com/43b963b21e.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+  	<header>
+    	<div class="header_cont">
+    		<div class="header_title">
+	    		<h3>ADOBE</h3>
+	    	</div>
+	    	<div class="items_count">
+	    		<!-- <p><span class="items_count_num"></span> Product Added to cart</p> -->
+	    	</div>
+    	</div>
+	</header>
+  <section class="section_container">
+    <div class="left_container" id="card_block">
+    <!-- dynamically rendering card block for all the product from json/api -->
+    </div>
+    <div class="right_container">
+      <div class="close_inmobile">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="item_cart_details">
+        <div class="item_cart_heading">
+          <div class="item_name_heading">Item Details</div>
+          <div class="count_heading">Count</div>
+          <div class="item_price_heaing">Price</div>
+        </div> 
+
+        <!-- dynamically will come once the item is added to card -->
+        <!-- <div class="item_card_main_body"> -->
+          <div class="item_cart_body">
+          <!-- <div class="item_each_row">
+            <div class="img_container">
+              <img id="cart_item_img"  src="https://picsum.photos/33/31">
+            </div>
+            <div class="item_name">
+              item 1
+            </div>
+            <div class="price_calculate">
+              <button>
+                <i class="fas fa-minus"></i>
+              </button>
+              <input class="item_total_count" value="4">
+              <button>
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+            <div class="total_item_price">$3</div>
+          </div> -->
+        </div>
+      <!-- </div>   -->
+      </div>
+
+      <div class="item_cart_price_details">
+        <div class="item_cart_price_details_body">
+          <h4>Cart Summary</h4>
+          <div class="item_cart_price_total">
+            <div class="item_cart_price_each_row">
+              <span class="start_span">Total Products <span class="items_count_num"></span></span> :
+              <span class="last_span items_mrp">Rs 0</span>
+            </div>
+          </div>
+          <div class="item_discount_total">
+            <div class="item_cart_price_each_row">
+              <span class="start_span ">Discount</span> :
+              <span class="last_span items_dis">Rs 0</span>
+            </div>
+            <!-- <div class="item_cart_price_each_row">
+              <span class="start_span">Type Discount</span> :
+              <span class="last_span">-$0.8</span>
+            </div> -->
+          </div>
+        </div>
+        <div class="item_order_total">
+          <div class="item_cart_price_each_row">
+            <span class="start_span">Order Total</span> :
+            <span class="last_span cart_total_amount">Rs 0</span>
+          </div>
+        </div>       
+      </div>
+    </div>
+
+    <!-- cart container ends here -->
+  </section>
+  <div class="right_container_for_mobile"><i class="fas fa-bars"></i></div>
+  <!-- <script type="text/javascript" src="../component//db.js"></script> -->
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/script.js"></script>
+
+  </body>
+</html>
